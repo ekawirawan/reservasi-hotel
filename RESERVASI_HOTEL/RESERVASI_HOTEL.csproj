@@ -64,6 +64,12 @@
     <Compile Include="FormDataCustomer.Designer.cs">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDataResepsionis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataResepsionis.Designer.cs">
+      <DependentUpon>FormDataResepsionis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAddDataCustomer.resx">
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDataCustomer.resx">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataResepsionis.resx">
+      <DependentUpon>FormDataResepsionis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
