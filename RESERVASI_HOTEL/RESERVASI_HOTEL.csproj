@@ -70,6 +70,12 @@
     <Compile Include="FormDataResepsionis.Designer.cs">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTambahDataResepsionis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDataResepsionis.resx">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambahDataResepsionis.resx">
       <DependentUpon>FormTambahDataResepsionis.cs</DependentUpon>
