@@ -56,7 +56,7 @@ namespace RESERVASI_HOTEL
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(332, 32);
+            this.textBox1.Location = new System.Drawing.Point(331, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(151, 20);
             this.textBox1.TabIndex = 1;
@@ -66,7 +66,7 @@ namespace RESERVASI_HOTEL
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(221, 33);
+            this.label2.Location = new System.Drawing.Point(220, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 15);
             this.label2.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace RESERVASI_HOTEL
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(567, 25);
+            this.button1.Location = new System.Drawing.Point(565, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 27);
             this.button1.TabIndex = 3;
@@ -97,7 +97,7 @@ namespace RESERVASI_HOTEL
             this.Column6});
             this.dataGridView1.Location = new System.Drawing.Point(27, 95);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(642, 332);
+            this.dataGridView1.Size = new System.Drawing.Size(640, 332);
             this.dataGridView1.TabIndex = 4;
             // 
             // Column1
@@ -138,7 +138,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 450);
+            this.ClientSize = new System.Drawing.Size(694, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
