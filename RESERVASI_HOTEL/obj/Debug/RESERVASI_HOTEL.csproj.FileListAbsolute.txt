@@ -1,0 +1,11 @@
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\bin\Debug\RESERVASI_HOTEL.exe.config
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\bin\Debug\RESERVASI_HOTEL.exe
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\bin\Debug\RESERVASI_HOTEL.pdb
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.AssemblyReference.cache
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.Form1.resources
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormDataKamar.resources
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.Properties.Resources.resources
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.GenerateResource.cache
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.CoreCompileInputs.cache
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.exe
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.pdb
