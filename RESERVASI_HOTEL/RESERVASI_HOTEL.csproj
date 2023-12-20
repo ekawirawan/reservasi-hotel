@@ -70,6 +70,12 @@
     <Compile Include="FormDataResepsionis.Designer.cs">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTambahDataResepsionis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahDataResepsionis.Designer.cs">
+      <DependentUpon>FormTambahDataResepsionis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAddDataCustomer.resx">
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDataResepsionis.resx">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahDataResepsionis.resx">
+      <DependentUpon>FormTambahDataResepsionis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
