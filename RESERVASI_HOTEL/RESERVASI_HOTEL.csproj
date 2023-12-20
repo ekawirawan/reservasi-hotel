@@ -52,8 +52,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddDataCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddDataCustomer.Designer.cs">
+      <DependentUpon>FormAddDataCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataCustomer.Designer.cs">
+      <DependentUpon>FormDataCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddDataCustomer.resx">
+      <DependentUpon>FormAddDataCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataCustomer.resx">
+      <DependentUpon>FormDataCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
