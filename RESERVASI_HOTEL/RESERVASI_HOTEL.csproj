@@ -82,6 +82,7 @@
     <Compile Include="FormTambahDataResepsionis.Designer.cs">
       <DependentUpon>FormTambahDataResepsionis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Koneksi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAddDataCustomer.resx">
