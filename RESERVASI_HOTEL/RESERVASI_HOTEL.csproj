@@ -65,6 +65,12 @@
     <Compile Include="FormDataCustomer.Designer.cs">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDataKamar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataKamar.Designer.cs">
+      <DependentUpon>FormDataKamar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDataResepsionis.cs">
       <SubType>Form</SubType>
     </Compile>
