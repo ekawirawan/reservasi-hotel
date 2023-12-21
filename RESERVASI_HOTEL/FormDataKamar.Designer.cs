@@ -60,17 +60,17 @@ namespace RESERVASI_HOTEL
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 75);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 91);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(863, 468);
+            this.dataGridView1.Size = new System.Drawing.Size(863, 427);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 26);
+            this.label1.Location = new System.Drawing.Point(30, 26);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(89, 16);
@@ -80,7 +80,7 @@ namespace RESERVASI_HOTEL
             // txtCariNoKamar
             // 
             this.txtCariNoKamar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCariNoKamar.Location = new System.Drawing.Point(444, 26);
+            this.txtCariNoKamar.Location = new System.Drawing.Point(461, 26);
             this.txtCariNoKamar.Name = "txtCariNoKamar";
             this.txtCariNoKamar.Size = new System.Drawing.Size(100, 20);
             this.txtCariNoKamar.TabIndex = 2;
@@ -89,7 +89,7 @@ namespace RESERVASI_HOTEL
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(363, 29);
+            this.label2.Location = new System.Drawing.Point(380, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 3;
@@ -98,7 +98,7 @@ namespace RESERVASI_HOTEL
             // btnTambahKamar
             // 
             this.btnTambahKamar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTambahKamar.Location = new System.Drawing.Point(783, 19);
+            this.btnTambahKamar.Location = new System.Drawing.Point(800, 19);
             this.btnTambahKamar.Name = "btnTambahKamar";
             this.btnTambahKamar.Size = new System.Drawing.Size(93, 30);
             this.btnTambahKamar.TabIndex = 4;
@@ -154,7 +154,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 555);
+            this.ClientSize = new System.Drawing.Size(925, 555);
             this.Controls.Add(this.btnTambahKamar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCariNoKamar);
