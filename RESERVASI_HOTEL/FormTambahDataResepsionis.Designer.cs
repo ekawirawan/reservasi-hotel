@@ -37,7 +37,7 @@ namespace RESERVASI_HOTEL
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSimpanResepsionis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,6 +103,7 @@ namespace RESERVASI_HOTEL
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Location = new System.Drawing.Point(213, 241);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 33);
@@ -110,21 +111,23 @@ namespace RESERVASI_HOTEL
             this.button2.Text = "Batal";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnSimpanResepsionis
             // 
-            this.button1.Location = new System.Drawing.Point(314, 241);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 33);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Simpan";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSimpanResepsionis.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnSimpanResepsionis.Location = new System.Drawing.Point(314, 241);
+            this.btnSimpanResepsionis.Name = "btnSimpanResepsionis";
+            this.btnSimpanResepsionis.Size = new System.Drawing.Size(87, 33);
+            this.btnSimpanResepsionis.TabIndex = 10;
+            this.btnSimpanResepsionis.Text = "Simpan";
+            this.btnSimpanResepsionis.UseVisualStyleBackColor = true;
+            this.btnSimpanResepsionis.Click += new System.EventHandler(this.btnSimpanResepsionis_Click);
             // 
             // FormTambahDataResepsionis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 306);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSimpanResepsionis);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label4);
@@ -144,12 +147,12 @@ namespace RESERVASI_HOTEL
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNama;
-        private System.Windows.Forms.TextBox txtUsername;
+        public System.Windows.Forms.TextBox txtNama;
+        public System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPassword;
+        public System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSimpanResepsionis;
     }
 }
