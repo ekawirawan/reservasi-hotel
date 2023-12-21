@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAddDataCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +70,24 @@
     </Compile>
     <Compile Include="FormDataResepsionis.Designer.cs">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataTransaksi.Designer.cs">
+      <DependentUpon>FormDataTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormContainer.Designer.cs">
+      <DependentUpon>FormContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -109,6 +121,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDataResepsionis.resx">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataTransaksi.resx">
+      <DependentUpon>FormDataTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormContainer.resx">
+      <DependentUpon>FormContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

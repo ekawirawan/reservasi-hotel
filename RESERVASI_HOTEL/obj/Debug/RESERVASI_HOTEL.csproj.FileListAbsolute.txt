@@ -12,3 +12,8 @@ C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_H
 C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.CoreCompileInputs.cache
 C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.exe
 C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.pdb
+C:\Users\USER\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormDataKamar.resources
+C:\Users\USER\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormHome.resources
+C:\Users\USER\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormTambahDataKamar.resources
+C:\Users\USER\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormDataTransaksi.resources
+C:\Users\USER\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormContainer.resources
