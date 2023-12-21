@@ -83,6 +83,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTambahDataKamar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahDataKamar.Designer.cs">
+      <DependentUpon>FormTambahDataKamar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTambahDataResepsionis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +104,17 @@
     <EmbeddedResource Include="FormDataCustomer.resx">
       <DependentUpon>FormDataCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDataKamar.resx">
+      <DependentUpon>FormDataKamar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDataResepsionis.resx">
       <DependentUpon>FormDataResepsionis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahDataKamar.resx">
+      <DependentUpon>FormTambahDataKamar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTambahDataResepsionis.resx">
       <DependentUpon>FormTambahDataResepsionis.cs</DependentUpon>
