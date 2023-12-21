@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RESERVASI_HOTEL
 {
-    public partial class Form1 : Form
+    public partial class FormDataTransaksi : Form
     {
-        public Form1()
+        public FormDataTransaksi()
         {
             InitializeComponent();
         }
