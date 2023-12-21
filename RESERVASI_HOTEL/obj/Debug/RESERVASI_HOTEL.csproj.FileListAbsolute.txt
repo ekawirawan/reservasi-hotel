@@ -1,0 +1,14 @@
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\bin\Debug\RESERVASI_HOTEL.exe.config
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\bin\Debug\RESERVASI_HOTEL.exe
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\bin\Debug\RESERVASI_HOTEL.pdb
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormAddDataCustomer.resources
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormDataCustomer.resources
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormDataResepsionis.resources
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormLogin.resources
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormTambahDataResepsionis.resources
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.Properties.Resources.resources
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.exe
+C:\Users\USER\source\repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.pdb
