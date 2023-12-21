@@ -143,12 +143,14 @@ namespace RESERVASI_HOTEL
             // 
             // btnSimpan
             // 
+            this.btnSimpan.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSimpan.Location = new System.Drawing.Point(290, 302);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(101, 38);
             this.btnSimpan.TabIndex = 11;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnBatal
             // 
@@ -196,17 +198,17 @@ namespace RESERVASI_HOTEL
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNoKamar;
+        public  System.Windows.Forms.TextBox txtNoKamar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtHargaPerMalam;
-        private System.Windows.Forms.ComboBox cmbJenisKamar;
-        private System.Windows.Forms.NumericUpDown numStok;
-        private System.Windows.Forms.Button btnSimpan;
+        public  System.Windows.Forms.TextBox txtHargaPerMalam;
+        public  System.Windows.Forms.ComboBox cmbJenisKamar;
+        public  System.Windows.Forms.NumericUpDown numStok;
+        private  System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnBatal;
-        private System.Windows.Forms.NumericUpDown numKapasitas;
+        public  System.Windows.Forms.NumericUpDown numKapasitas;
     }
 }

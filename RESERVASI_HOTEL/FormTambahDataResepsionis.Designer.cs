@@ -103,6 +103,7 @@ namespace RESERVASI_HOTEL
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Location = new System.Drawing.Point(213, 241);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 33);
@@ -112,6 +113,7 @@ namespace RESERVASI_HOTEL
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button1.Location = new System.Drawing.Point(314, 241);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 33);
