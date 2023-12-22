@@ -17,39 +17,23 @@ namespace RESERVASI_HOTEL
             InitializeComponent();
         }
 
-        public void formSetMdi(Form form)
+        public void setMenuStrip(ToolStripItemClickedEventArgs e, Form form, string nameItemToolStrip)
         {
-            form.MdiParent = this;
-            form.WindowState = FormWindowState.Maximized;
-            form.Show();
+            if (e.ClickedItem.Text.Equals(nameItemToolStrip))
+            {
+                form.MdiParent = this;
+                form.WindowState = FormWindowState.Maximized;
+                form.Show();
+            }
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (e.ClickedItem.Text.Equals("Home"))
-            {
-               
-                formSetMdi(new FormHome());
-            }
-
-            if (e.ClickedItem.Text.Equals("Data Kamar"))
-            {
-                formSetMdi(new FormDataKamar());
-            }
-
-            if (e.ClickedItem.Text.Equals("Data Customer"))
-            {
-                formSetMdi(new FormDataCustomer());
-            }
-
-            if (e.ClickedItem.Text.Equals("Data Resepsionis")) {
-                formSetMdi(new FormDataResepsionis());
-            }
-
-            if (e.ClickedItem.Text.Equals("Data Transaksi"))
-            {
-                formSetMdi(new FormDataTransaksi());
-            }
+            setMenuStrip(e, new FormHome(), "Home");
+            setMenuStrip(e, new FormDataKamar(), "Data Kamar");
+            setMenuStrip(e, new FormDataCustomer(), "Data Customer");
+            setMenuStrip(e, new FormDataResepsionis(), "Data Resepsionis");
+            setMenuStrip(e, new FormDataTransaksi(), "Data Transaksi");
         }
     }
 }

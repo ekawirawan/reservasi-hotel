@@ -14,7 +14,7 @@ namespace RESERVASI_HOTEL
 
         public static void buka()
         {
-            connString = @"data source=LAPTOP-13S08GJJ\SQLEXPRESS; initial catalog=HOTEL; integrated security=true;";
+            connString = @"data source=LAPTOP-5NNB4625\SQLEXPRESS; initial catalog=HOTEL; integrated security=true;";
             sqlConn = new SqlConnection(connString);
             if (sqlConn.State == System.Data.ConnectionState.Closed)
             {
