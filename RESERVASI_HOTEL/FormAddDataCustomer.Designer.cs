@@ -36,11 +36,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNamaCustomer = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSimpanDataCustomer
             // 
             this.btnSimpanDataCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSimpanDataCustomer.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSimpanDataCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSimpanDataCustomer.Location = new System.Drawing.Point(458, 309);
             this.btnSimpanDataCustomer.Name = "btnSimpanDataCustomer";
@@ -48,6 +50,7 @@
             this.btnSimpanDataCustomer.TabIndex = 14;
             this.btnSimpanDataCustomer.Text = "Simpan";
             this.btnSimpanDataCustomer.UseVisualStyleBackColor = true;
+            this.btnSimpanDataCustomer.Click += new System.EventHandler(this.btnSimpanDataCustomer_Click);
             // 
             // label3
             // 
@@ -127,13 +130,23 @@
             this.label4.Size = new System.Drawing.Size(208, 20);
             this.label4.TabIndex = 15;
             this.label4.Text = "Tambah Data Customer";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // button1
+            // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.Location = new System.Drawing.Point(261, 309);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 47);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Batal";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormAddDataCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 384);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSimpanDataCustomer);
             this.Controls.Add(this.label3);
@@ -151,13 +164,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSimpanDataCustomer;
+        public System.Windows.Forms.Button btnSimpanDataCustomer;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNoTelp;
+        public System.Windows.Forms.TextBox txtNoTelp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtAlamatCustomer;
+        public System.Windows.Forms.TextBox txtAlamatCustomer;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNamaCustomer;
+        public System.Windows.Forms.TextBox txtNamaCustomer;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }
