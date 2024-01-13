@@ -57,7 +57,7 @@ namespace RESERVASI_HOTEL
             // txtSearch
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtSearch.Location = new System.Drawing.Point(331, 32);
+            this.txtSearch.Location = new System.Drawing.Point(485, 32);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(151, 20);
             this.txtSearch.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace RESERVASI_HOTEL
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(220, 33);
+            this.label2.Location = new System.Drawing.Point(374, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 15);
             this.label2.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace RESERVASI_HOTEL
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(548, 25);
+            this.button1.Location = new System.Drawing.Point(856, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 27);
             this.button1.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace RESERVASI_HOTEL
             this.dataGridView1.Location = new System.Drawing.Point(27, 95);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(640, 332);
+            this.dataGridView1.Size = new System.Drawing.Size(948, 332);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -112,32 +112,38 @@ namespace RESERVASI_HOTEL
             // 
             this.Column1.HeaderText = "#";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "ID";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             this.Column7.Visible = false;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Nama";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Username";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Password";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column5
             // 
             this.Column5.HeaderText = "";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
@@ -145,6 +151,7 @@ namespace RESERVASI_HOTEL
             // 
             this.Column6.HeaderText = "";
             this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
@@ -152,7 +159,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 450);
+            this.ClientSize = new System.Drawing.Size(1002, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
