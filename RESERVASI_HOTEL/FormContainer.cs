@@ -35,5 +35,15 @@ namespace RESERVASI_HOTEL
             setMenuStrip(e, new FormDataResepsionis(), "Data Resepsionis");
             setMenuStrip(e, new FormDataTransaksi(), "Data Transaksi");
         }
+
+        private void FormContainer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataTransaksiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
