@@ -40,6 +40,7 @@ namespace RESERVASI_HOTEL
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.homeToolStripMenuItem,
             this.dataKamarToolStripMenuItem,
@@ -48,7 +49,7 @@ namespace RESERVASI_HOTEL
             this.dataTransaksiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(897, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1196, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -56,43 +57,46 @@ namespace RESERVASI_HOTEL
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.homeToolStripMenuItem.Text = "Home";
             // 
             // dataKamarToolStripMenuItem
             // 
             this.dataKamarToolStripMenuItem.Name = "dataKamarToolStripMenuItem";
-            this.dataKamarToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.dataKamarToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.dataKamarToolStripMenuItem.Text = "Data Kamar";
             // 
             // dataCustomerToolStripMenuItem
             // 
             this.dataCustomerToolStripMenuItem.Name = "dataCustomerToolStripMenuItem";
-            this.dataCustomerToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.dataCustomerToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
             this.dataCustomerToolStripMenuItem.Text = "Data Customer";
             // 
             // dataResepsionisToolStripMenuItem
             // 
             this.dataResepsionisToolStripMenuItem.Name = "dataResepsionisToolStripMenuItem";
-            this.dataResepsionisToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
+            this.dataResepsionisToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.dataResepsionisToolStripMenuItem.Text = "Data Resepsionis";
             // 
             // dataTransaksiToolStripMenuItem
             // 
             this.dataTransaksiToolStripMenuItem.Name = "dataTransaksiToolStripMenuItem";
-            this.dataTransaksiToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.dataTransaksiToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
             this.dataTransaksiToolStripMenuItem.Text = "Data Transaksi";
+            this.dataTransaksiToolStripMenuItem.Click += new System.EventHandler(this.dataTransaksiToolStripMenuItem_Click);
             // 
-            // FormHome
+            // FormContainer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 479);
+            this.ClientSize = new System.Drawing.Size(1196, 590);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FormHome";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "FormContainer";
             this.Text = "Reservasi Hotel";
+            this.Load += new System.EventHandler(this.FormContainer_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
