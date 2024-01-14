@@ -324,6 +324,7 @@ namespace RESERVASI_HOTEL
             // btnSimpan
             // 
             this.btnSimpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSimpan.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnSimpan.Location = new System.Drawing.Point(575, 577);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(111, 42);
