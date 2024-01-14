@@ -124,12 +124,7 @@ namespace RESERVASI_HOTEL
                         + " @pHargaSewa, @pHargaTotal, @pTglCheckIn, @pTglCheckOut, @pStatusPemesanan) ";
 
 
-                    int stockNow = checkTotalStockKamar(id_kamar);
-                    int totalStock = stockNow - 1;
-                    cmd.CommandText = " UPDATE Kamar SET stok = " + totalStock.ToString() + " where id_kamar = @pIdKamar ";
-
-
-                    MessageBox.Show("Data transaksi berhasil disimpan");
+                    updateStockKamar(id_kamar);
                 }
                 else
                 {
@@ -148,8 +143,6 @@ namespace RESERVASI_HOTEL
                      + "WHERE id_kamar = @pID";
 
                     cmd.Parameters.AddWithValue("pID", id_transaksi_edit);
-
-                    MessageBox.Show("Data transaksi berhasil diubah");
                 }
 
                 cmd.Parameters.AddWithValue("pIdCustomer", int.Parse(id_customer));
@@ -177,12 +170,30 @@ namespace RESERVASI_HOTEL
             }
             catch(Exception err)
             {
-                MessageBox.Show("Terjadi error saat menambahkan data" + err.Message, "Error",
+                MessageBox.Show("Terjadi error saat menambahkan data" + err, "Error",
                   MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
            
 
+        }
+
+        public void updateStockKamar(string id_kamar)
+        {
+            Koneksi.buka();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Koneksi.sqlConn;
+
+            int stockNow = checkTotalStockKamar(id_kamar);
+            int totalStock = stockNow - 1;
+            cmd.CommandText = " UPDATE Kamar SET stok = " + totalStock.ToString() + " where id_kamar = @pIdKamar ";
+
+            cmd.Parameters.AddWithValue("pIdKamar", int.Parse(id_kamar));
+
+            cmd.ExecuteNonQuery();
+
+            Koneksi.tutup();
+            cmd.Dispose();
         }
 
         //untuk update jumlah stock
@@ -194,11 +205,11 @@ namespace RESERVASI_HOTEL
 
             cmd.CommandText = " SELECT * FROM Kamar WHERE id_kamar = " + id_kamar;
             SqlDataReader rd = cmd.ExecuteReader();
-            string stock = "";
             int stockInt = 0;
+
             while (rd.Read())
             {
-                stock = rd["stock"].ToString();
+                string stock = rd["stok"].ToString();
                 stockInt = int.Parse(stock);
 
             }

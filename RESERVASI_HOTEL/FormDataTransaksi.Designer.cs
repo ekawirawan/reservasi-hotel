@@ -31,9 +31,6 @@ namespace RESERVASI_HOTEL
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtCariDataTransaksi = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnTambahTransaksi = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +45,9 @@ namespace RESERVASI_HOTEL
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.txtCariDataTransaksi = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnTambahTransaksi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +55,10 @@ namespace RESERVASI_HOTEL
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 25);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(137, 20);
+            this.label1.Size = new System.Drawing.Size(114, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Data Transaksi";
             // 
@@ -85,44 +84,15 @@ namespace RESERVASI_HOTEL
             this.Column12,
             this.Column13,
             this.Column14});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 84);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 68);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1039, 458);
+            this.dataGridView1.Size = new System.Drawing.Size(779, 372);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // txtCariDataTransaksi
-            // 
-            this.txtCariDataTransaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCariDataTransaksi.Location = new System.Drawing.Point(596, 31);
-            this.txtCariDataTransaksi.Name = "txtCariDataTransaksi";
-            this.txtCariDataTransaksi.Size = new System.Drawing.Size(297, 22);
-            this.txtCariDataTransaksi.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(268, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(309, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Cari Data Transaksi Berdasarkan Nomor Kamar";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // btnTambahTransaksi
-            // 
-            this.btnTambahTransaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTambahTransaksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahTransaksi.Location = new System.Drawing.Point(919, 19);
-            this.btnTambahTransaksi.Name = "btnTambahTransaksi";
-            this.btnTambahTransaksi.Size = new System.Drawing.Size(110, 47);
-            this.btnTambahTransaksi.TabIndex = 6;
-            this.btnTambahTransaksi.Text = "Tambah";
-            this.btnTambahTransaksi.UseVisualStyleBackColor = true;
-            this.btnTambahTransaksi.Click += new System.EventHandler(this.btnTambahTransaksi_Click);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -237,17 +207,51 @@ namespace RESERVASI_HOTEL
             this.Column14.ReadOnly = true;
             this.Column14.Width = 125;
             // 
+            // txtCariDataTransaksi
+            // 
+            this.txtCariDataTransaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCariDataTransaksi.Location = new System.Drawing.Point(447, 25);
+            this.txtCariDataTransaksi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCariDataTransaksi.Name = "txtCariDataTransaksi";
+            this.txtCariDataTransaksi.Size = new System.Drawing.Size(224, 20);
+            this.txtCariDataTransaksi.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(201, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(230, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Cari Data Transaksi Berdasarkan Nomor Kamar";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btnTambahTransaksi
+            // 
+            this.btnTambahTransaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTambahTransaksi.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnTambahTransaksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambahTransaksi.Location = new System.Drawing.Point(689, 15);
+            this.btnTambahTransaksi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTambahTransaksi.Name = "btnTambahTransaksi";
+            this.btnTambahTransaksi.Size = new System.Drawing.Size(82, 38);
+            this.btnTambahTransaksi.TabIndex = 6;
+            this.btnTambahTransaksi.Text = "Tambah";
+            this.btnTambahTransaksi.UseVisualStyleBackColor = true;
+            this.btnTambahTransaksi.Click += new System.EventHandler(this.btnTambahTransaksi_Click);
+            // 
             // FormDataTransaksi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnTambahTransaksi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCariDataTransaksi);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormDataTransaksi";
             this.Text = "FormDataTransaksi";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
