@@ -178,6 +178,11 @@ namespace RESERVASI_HOTEL
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbMetodePembayaran.FormattingEnabled = true;
+            this.cmbMetodePembayaran.Items.AddRange(new object[] {
+            "Cash",
+            "Transfer Bank",
+            "Kartu Debit",
+            "Kartu Kredit"});
             this.cmbMetodePembayaran.Location = new System.Drawing.Point(170, 292);
             this.cmbMetodePembayaran.Name = "cmbMetodePembayaran";
             this.cmbMetodePembayaran.Size = new System.Drawing.Size(513, 21);
@@ -307,6 +312,10 @@ namespace RESERVASI_HOTEL
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbStatusPesanan.FormattingEnabled = true;
+            this.cmbStatusPesanan.Items.AddRange(new object[] {
+            "Pending",
+            "Check-In",
+            "Check-Out"});
             this.cmbStatusPesanan.Location = new System.Drawing.Point(171, 496);
             this.cmbStatusPesanan.Name = "cmbStatusPesanan";
             this.cmbStatusPesanan.Size = new System.Drawing.Size(513, 21);
