@@ -65,7 +65,7 @@ namespace RESERVASI_HOTEL
             while (rd.Read())
             {
                 string id_kamar = rd["id_kamar"].ToString();
-                string nomor_kamar = rd["no_kamar"].ToString();
+                string nomor_kamar = rd["nomor_kamar"].ToString();
                 string kapasitas = rd["kapasitas"].ToString();
                 string jenis_kamar = rd["jenis_kamar"].ToString();
                 string harga_per_malam = rd["harga_per_malam"].ToString();
@@ -103,85 +103,96 @@ namespace RESERVASI_HOTEL
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            Koneksi.buka();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = Koneksi.sqlConn;
 
-            string[] vSplit = cmbCustomer.Text.Split('-');
-            string id_customer = vSplit[0];
-            string[] vSplitKamar = cmbCustomer.Text.Split('-');
-            string id_kamar = vSplitKamar[0];
-
-            if (id_transaksi_edit == 0)
+            try
             {
-                //untuk tambah data transaksi
-                cmd.CommandText = " INSERT INTO Transaksi (id_customer, id_kamar, lama_menginap, " +
-                    " metode_pembayaran, tgl_transaksi, harga_sewa, harga_total, tgl_check_in, tgl_check_out, status_pemesanan) " +
-                    " VALUES (@pIdCustomer, @pIdKamar,  @pLamaMenginap, @pMetodePembayaran, @pTglTransaksi, " +
-                    " @pHargaSewa, @pHargaTotal, @pTglCheckIn, @pTglCheckOut, @pStatusPemesanan) ";
+                Koneksi.buka();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = Koneksi.sqlConn;
+
+                string[] vSplit = cmbCustomer.Text.Split('-');
+                string id_customer = vSplit[0];
+                string[] vSplitKamar = cmbCustomer.Text.Split('-');
+                string id_kamar = vSplitKamar[0];
+
+                if (id_transaksi_edit == 0)
+                {
+                    //untuk tambah data transaksi
+                    cmd.CommandText = " INSERT INTO Transaksi (id_customer, id_kamar, lama_menginap, " 
+                        + " metode_pembayaran, tgl_transaksi, harga_sewa, harga_total, tgl_check_in, tgl_check_out, status_pemesanan) "
+                        + " VALUES (@pIdCustomer, @pIdKamar,  @pLamaMenginap, @pMetodePembayaran, @pTglTransaksi, " 
+                        + " @pHargaSewa, @pHargaTotal, @pTglCheckIn, @pTglCheckOut, @pStatusPemesanan) ";
 
 
-                int stockNow = checkTotalStockKamar(id_kamar);
-                int totalStock = stockNow - 1;
-                cmd.CommandText = " UPDATE mobil SET stok = " + totalStock.ToString() + " where id = @pIdKamar ";
+                    int stockNow = checkTotalStockKamar(id_kamar);
+                    int totalStock = stockNow - 1;
+                    cmd.CommandText = " UPDATE Kamar SET stok = " + totalStock.ToString() + " where id_kamar = @pIdKamar ";
 
+
+                    MessageBox.Show("Data transaksi berhasil disimpan");
+                }
+                else
+                {
+                    //untuk update data transaksi
+                    cmd.CommandText = "UPDATE Transaksi SET "
+                     + "id_customer = @pIdCustomer, "
+                     + "id_kamar = @pIdKamar, "
+                     + "lama_menginap = @pLamaMenginap, "
+                     + "harga_total = @pHargaTotal "
+                     + "harga_per_malam = @pHargaPerMalam, "
+                     + "metode_pembayaran = @pMetodePembayaran "
+                     + "tgl_transaksi = @pTglTransaksi "
+                     + "tgl_check_in = @pTglCheckIn "
+                     + "tgl_check_out = @pTglCheckOut "
+                     + "status_pemesanan = @pStatusPemesanan "
+                     + "WHERE id_kamar = @pID";
+
+                    cmd.Parameters.AddWithValue("pID", id_transaksi_edit);
+
+                    MessageBox.Show("Data transaksi berhasil diubah");
+                }
+
+                cmd.Parameters.AddWithValue("pIdCustomer", int.Parse(id_customer));
+                cmd.Parameters.AddWithValue("pIdKamar", int.Parse(id_kamar));
+                cmd.Parameters.AddWithValue("pLamaMenginap", numLamaMenginap.Value);
+                cmd.Parameters.AddWithValue("pMetodePembayaran", cmbMetodePembayaran.Text);
+                cmd.Parameters.AddWithValue("pHargaSewa", int.Parse(txtHargaPerMalam.Text));
+                cmd.Parameters.AddWithValue("pHargaTotal", int.Parse(txtHargaTotal.Text));
+                cmd.Parameters.AddWithValue("pTglTransaksi", dtpTanggalTransaksi.Value);
+                cmd.Parameters.AddWithValue("pTglCheckIn", dtpTanggalCheckIn.Value);
+                cmd.Parameters.AddWithValue("pTglCheckOut", dtpTanggalCheckOut.Value);
+                cmd.Parameters.AddWithValue("pStatusPemesanan", cmbStatusPesanan.Text);
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("Data transaksi berhasil disimpan");
+                Koneksi.tutup();
+                cmd.Dispose();
+
+                //clear input setelah save
+                cmbCustomer.Text = "";
+                cmbKamar.Text = "";
+                numLamaMenginap.Value = 0;
+                txtHargaTotal.Text = "";
+                cmbMetodePembayaran.Text = "";
+                cmbStatusPesanan.Text = "";
             }
-            else
+            catch(Exception err)
             {
-                //untuk update data transaksi
-                cmd.CommandText = "UPDATE Transaksi SET "
-                 + "id_customer = @pIdCustomer, "
-                 + "id_Kamar = @pIdKamar, "
-                 + "lama_menginap = @pLamaMenginap, "
-                 + "harga_total = @pHargaTotal "
-                 + "harga_per_malam = @pHargaPerMalam, "
-                 + "metode_pembayaran = @pMetodePembayaran "
-                 + "tanggal_transaksi = @pTanggalTransaksi "
-                 + "tanggal_check_in = @pTanggalCheckIn "
-                 + "tanggal_check_out = @pTanggalCheckOut "
-                 + "status_pemesanan = @pStatusPemesanan "
-                 + "WHERE id_kamar = @pID";
-
-                cmd.Parameters.AddWithValue("pID", id_transaksi_edit);
-
-                MessageBox.Show("Data transaksi berhasil diubah");
+                MessageBox.Show("Terjadi error saat menambahkan data" + err.Message, "Error",
+                  MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            cmd.Parameters.AddWithValue("pIdCustomer", id_customer);
-            cmd.Parameters.AddWithValue("pIdKamar", id_kamar);
-            cmd.Parameters.AddWithValue("pLamaMenginap", numLamaMenginap.Value);
-            cmd.Parameters.AddWithValue("pMetodePembayaran", cmbMetodePembayaran.Text);
-            cmd.Parameters.AddWithValue("pTglTransaksi", dtpTanggalTransaksi.Value);
-            cmd.Parameters.AddWithValue("pHargaSewa", txtHargaPerMalam.Text);
-            cmd.Parameters.AddWithValue("pHargaTotal", txtHargaTotal.Text);
-            cmd.Parameters.AddWithValue("pTglCheckIn", dtpTanggalCheckIn.Value);
-            cmd.Parameters.AddWithValue("pTglCheckOut", dtpTanggalCheckOut.Value);
-            cmd.Parameters.AddWithValue("pStatusPemesanan", cmbStatusPesanan.Text);
-            cmd.ExecuteNonQuery();
+           
 
-            Koneksi.tutup();
-            cmd.Dispose();
-
-            //clear input setelah save
-            cmbCustomer.Text = "";
-            cmbKamar.Text = "";
-            numLamaMenginap.Value = 0;
-            txtHargaTotal.Text = "";
-            cmbMetodePembayaran.Text = "";
-            cmbStatusPesanan.Text = "";
         }
 
-
+        //untuk update jumlah stock
         public int checkTotalStockKamar(string id_kamar)
         {
             Koneksi.buka();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Koneksi.sqlConn;
 
-            cmd.CommandText = " SELECT * FROM Kamar WHERE id_kamar " + id_kamar;
+            cmd.CommandText = " SELECT * FROM Kamar WHERE id_kamar = " + id_kamar;
             SqlDataReader rd = cmd.ExecuteReader();
             string stock = "";
             int stockInt = 0;

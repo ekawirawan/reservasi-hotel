@@ -37,3 +37,4 @@ C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVAS
 C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.exe
 C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.pdb
 C:\Users\USER\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormTambahDataTransaksi.resources
+C:\Users\WISNADI\Source\Repos\reservasi-hotel\RESERVASI_HOTEL\obj\Debug\RESERVASI_HOTEL.FormTambahDataTransaksi.resources

@@ -58,9 +58,12 @@ namespace RESERVASI_HOTEL
             // 
             // txtNoKamar
             // 
+            this.txtNoKamar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNoKamar.Location = new System.Drawing.Point(122, 61);
             this.txtNoKamar.Name = "txtNoKamar";
-            this.txtNoKamar.Size = new System.Drawing.Size(265, 20);
+            this.txtNoKamar.Size = new System.Drawing.Size(279, 20);
             this.txtNoKamar.TabIndex = 1;
             // 
             // label2
@@ -115,13 +118,19 @@ namespace RESERVASI_HOTEL
             // 
             // txtHargaPerMalam
             // 
+            this.txtHargaPerMalam.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHargaPerMalam.Location = new System.Drawing.Point(122, 185);
             this.txtHargaPerMalam.Name = "txtHargaPerMalam";
-            this.txtHargaPerMalam.Size = new System.Drawing.Size(265, 20);
+            this.txtHargaPerMalam.Size = new System.Drawing.Size(279, 20);
             this.txtHargaPerMalam.TabIndex = 7;
             // 
             // cmbJenisKamar
             // 
+            this.cmbJenisKamar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbJenisKamar.FormattingEnabled = true;
             this.cmbJenisKamar.Items.AddRange(new object[] {
             "Standard Room",
@@ -131,7 +140,7 @@ namespace RESERVASI_HOTEL
             "Family Room"});
             this.cmbJenisKamar.Location = new System.Drawing.Point(122, 142);
             this.cmbJenisKamar.Name = "cmbJenisKamar";
-            this.cmbJenisKamar.Size = new System.Drawing.Size(265, 21);
+            this.cmbJenisKamar.Size = new System.Drawing.Size(279, 21);
             this.cmbJenisKamar.TabIndex = 9;
             // 
             // numStok
@@ -143,8 +152,9 @@ namespace RESERVASI_HOTEL
             // 
             // btnSimpan
             // 
+            this.btnSimpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSimpan.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSimpan.Location = new System.Drawing.Point(290, 302);
+            this.btnSimpan.Location = new System.Drawing.Point(304, 283);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(101, 38);
             this.btnSimpan.TabIndex = 11;
@@ -154,9 +164,10 @@ namespace RESERVASI_HOTEL
             // 
             // btnBatal
             // 
-            this.btnBatal.Location = new System.Drawing.Point(122, 302);
+            this.btnBatal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBatal.Location = new System.Drawing.Point(120, 283);
             this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(101, 38);
+            this.btnBatal.Size = new System.Drawing.Size(117, 38);
             this.btnBatal.TabIndex = 12;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
@@ -172,7 +183,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 352);
+            this.ClientSize = new System.Drawing.Size(417, 333);
             this.Controls.Add(this.numKapasitas);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.btnSimpan);
