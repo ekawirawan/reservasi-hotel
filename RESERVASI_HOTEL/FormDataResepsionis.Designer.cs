@@ -51,7 +51,7 @@ namespace RESERVASI_HOTEL
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 48);
+            this.label1.Location = new System.Drawing.Point(24, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 16);
             this.label1.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace RESERVASI_HOTEL
             // txtSearch
             // 
             this.txtSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtSearch.Location = new System.Drawing.Point(441, 59);
+            this.txtSearch.Location = new System.Drawing.Point(441, 85);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(200, 20);
             this.txtSearch.TabIndex = 1;
@@ -71,7 +71,7 @@ namespace RESERVASI_HOTEL
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(458, 41);
+            this.label2.Location = new System.Drawing.Point(458, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 15);
             this.label2.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace RESERVASI_HOTEL
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(894, 45);
+            this.button1.Location = new System.Drawing.Point(894, 71);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 34);
             this.button1.TabIndex = 3;
@@ -111,7 +111,7 @@ namespace RESERVASI_HOTEL
             this.Column3,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 104);
+            this.dataGridView1.Location = new System.Drawing.Point(27, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(948, 323);
@@ -169,7 +169,7 @@ namespace RESERVASI_HOTEL
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(415, 59);
+            this.pictureBox1.Location = new System.Drawing.Point(415, 85);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +180,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 450);
+            this.ClientSize = new System.Drawing.Size(1002, 485);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);

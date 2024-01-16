@@ -63,13 +63,13 @@
             this.Column4,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(20, 119);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 146);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(565, 351);
+            this.dataGridView1.Size = new System.Drawing.Size(555, 355);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -142,7 +142,7 @@
             this.btnTambahCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.btnTambahCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTambahCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahCustomer.Location = new System.Drawing.Point(499, 49);
+            this.btnTambahCustomer.Location = new System.Drawing.Point(494, 78);
             this.btnTambahCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnTambahCustomer.Name = "btnTambahCustomer";
             this.btnTambahCustomer.Size = new System.Drawing.Size(86, 40);
@@ -153,7 +153,7 @@
             // txtCariNamaCustomer
             // 
             this.txtCariNamaCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtCariNamaCustomer.Location = new System.Drawing.Point(223, 65);
+            this.txtCariNamaCustomer.Location = new System.Drawing.Point(223, 94);
             this.txtCariNamaCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.txtCariNamaCustomer.Name = "txtCariNamaCustomer";
             this.txtCariNamaCustomer.Size = new System.Drawing.Size(196, 20);
@@ -164,7 +164,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 51);
+            this.label1.Location = new System.Drawing.Point(22, 80);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 17);
@@ -177,7 +177,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 47);
+            this.label2.Location = new System.Drawing.Point(260, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 15);
@@ -188,7 +188,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(198, 65);
+            this.pictureBox1.Location = new System.Drawing.Point(198, 94);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 491);
+            this.ClientSize = new System.Drawing.Size(608, 525);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);

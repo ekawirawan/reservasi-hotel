@@ -68,10 +68,10 @@ namespace RESERVASI_HOTEL
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(901, 455);
+            this.dataGridView1.Size = new System.Drawing.Size(891, 455);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -138,7 +138,7 @@ namespace RESERVASI_HOTEL
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 50);
+            this.label1.Location = new System.Drawing.Point(26, 79);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(89, 16);
@@ -148,7 +148,7 @@ namespace RESERVASI_HOTEL
             // txtCariNoKamar
             // 
             this.txtCariNoKamar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCariNoKamar.Location = new System.Drawing.Point(389, 60);
+            this.txtCariNoKamar.Location = new System.Drawing.Point(389, 89);
             this.txtCariNoKamar.Name = "txtCariNoKamar";
             this.txtCariNoKamar.Size = new System.Drawing.Size(196, 20);
             this.txtCariNoKamar.TabIndex = 2;
@@ -159,7 +159,7 @@ namespace RESERVASI_HOTEL
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(432, 42);
+            this.label2.Location = new System.Drawing.Point(432, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 15);
             this.label2.TabIndex = 3;
@@ -175,7 +175,7 @@ namespace RESERVASI_HOTEL
             this.btnTambahKamar.FlatAppearance.BorderSize = 0;
             this.btnTambahKamar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.btnTambahKamar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTambahKamar.Location = new System.Drawing.Point(837, 42);
+            this.btnTambahKamar.Location = new System.Drawing.Point(832, 71);
             this.btnTambahKamar.Name = "btnTambahKamar";
             this.btnTambahKamar.Size = new System.Drawing.Size(85, 38);
             this.btnTambahKamar.TabIndex = 4;
@@ -186,7 +186,7 @@ namespace RESERVASI_HOTEL
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(363, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(363, 86);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,7 +197,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(945, 580);
+            this.ClientSize = new System.Drawing.Size(945, 616);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnTambahKamar);

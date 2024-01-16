@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace RESERVASI_HOTEL
 {
+    
     public partial class FormContainer : Form
     {
+        bool mouseDown;
+        private Point offset;
         public FormContainer()
         {
             InitializeComponent();
@@ -45,14 +48,58 @@ namespace RESERVASI_HOTEL
             setMenuStrip(e, new FormDataTransaksi(), "Data Transaksi");
         }
 
-        private void FormContainer_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void dataTransaksiToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+
+        //
+        private void mouseDown_event(object sender, MouseEventArgs e)
+        {
+            offset.X = e.X;
+            offset.Y = e.Y;
+            mouseDown = true;
+        }
+
+        private void mouseMove_event(object sender, MouseEventArgs e)
+        {
+            if(mouseDown == true)
+            {
+                Point currentScreenPos = PointToScreen(e.Location);
+                Location = new Point(currentScreenPos.X - offset.X, currentScreenPos.Y - offset.Y);
+            }
+        }
+
+        private void mouseUp_E(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
+        }
+
+       
     }
 }
