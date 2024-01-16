@@ -58,7 +58,7 @@ namespace RESERVASI_HOTEL
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 52);
+            this.label1.Location = new System.Drawing.Point(28, 80);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(114, 16);
@@ -89,7 +89,7 @@ namespace RESERVASI_HOTEL
             this.Column12,
             this.Column13,
             this.Column14});
-            this.dataGridView1.Location = new System.Drawing.Point(25, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 131);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -215,7 +215,7 @@ namespace RESERVASI_HOTEL
             // txtCariDataTransaksi
             // 
             this.txtCariDataTransaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtCariDataTransaksi.Location = new System.Drawing.Point(288, 57);
+            this.txtCariDataTransaksi.Location = new System.Drawing.Point(288, 85);
             this.txtCariDataTransaksi.Margin = new System.Windows.Forms.Padding(2);
             this.txtCariDataTransaksi.Name = "txtCariDataTransaksi";
             this.txtCariDataTransaksi.Size = new System.Drawing.Size(224, 20);
@@ -226,7 +226,7 @@ namespace RESERVASI_HOTEL
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(364, 42);
+            this.label2.Location = new System.Drawing.Point(364, 70);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 13);
@@ -246,7 +246,7 @@ namespace RESERVASI_HOTEL
             this.btnTambahTransaksi.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.btnTambahTransaksi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTambahTransaksi.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahTransaksi.Location = new System.Drawing.Point(670, 42);
+            this.btnTambahTransaksi.Location = new System.Drawing.Point(670, 70);
             this.btnTambahTransaksi.Margin = new System.Windows.Forms.Padding(2);
             this.btnTambahTransaksi.Name = "btnTambahTransaksi";
             this.btnTambahTransaksi.Size = new System.Drawing.Size(77, 35);
@@ -258,7 +258,7 @@ namespace RESERVASI_HOTEL
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(263, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -269,7 +269,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 442);
+            this.ClientSize = new System.Drawing.Size(776, 495);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnTambahTransaksi);

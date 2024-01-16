@@ -39,7 +39,7 @@ namespace RESERVASI_HOTEL
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 57);
+            this.label1.Location = new System.Drawing.Point(33, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 16);
             this.label1.TabIndex = 2;
@@ -48,7 +48,7 @@ namespace RESERVASI_HOTEL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 84);
+            this.label2.Location = new System.Drawing.Point(33, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 13);
             this.label2.TabIndex = 3;
@@ -60,9 +60,9 @@ namespace RESERVASI_HOTEL
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::RESERVASI_HOTEL.Properties.Resources.kempinski_hotel;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 118);
+            this.pictureBox1.Location = new System.Drawing.Point(32, 148);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(950, 428);
+            this.pictureBox1.Size = new System.Drawing.Size(950, 438);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -72,7 +72,7 @@ namespace RESERVASI_HOTEL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 580);
+            this.ClientSize = new System.Drawing.Size(1015, 618);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
