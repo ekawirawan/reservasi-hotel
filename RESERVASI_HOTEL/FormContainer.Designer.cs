@@ -29,6 +29,7 @@ namespace RESERVASI_HOTEL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormContainer));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataKamarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +50,8 @@ namespace RESERVASI_HOTEL
             this.dataTransaksiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1196, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(897, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -57,43 +59,43 @@ namespace RESERVASI_HOTEL
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.homeToolStripMenuItem.Text = "Home";
             // 
             // dataKamarToolStripMenuItem
             // 
             this.dataKamarToolStripMenuItem.Name = "dataKamarToolStripMenuItem";
-            this.dataKamarToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.dataKamarToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.dataKamarToolStripMenuItem.Text = "Data Kamar";
             // 
             // dataCustomerToolStripMenuItem
             // 
             this.dataCustomerToolStripMenuItem.Name = "dataCustomerToolStripMenuItem";
-            this.dataCustomerToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.dataCustomerToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
             this.dataCustomerToolStripMenuItem.Text = "Data Customer";
             // 
             // dataResepsionisToolStripMenuItem
             // 
             this.dataResepsionisToolStripMenuItem.Name = "dataResepsionisToolStripMenuItem";
-            this.dataResepsionisToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
+            this.dataResepsionisToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.dataResepsionisToolStripMenuItem.Text = "Data Resepsionis";
             // 
             // dataTransaksiToolStripMenuItem
             // 
             this.dataTransaksiToolStripMenuItem.Name = "dataTransaksiToolStripMenuItem";
-            this.dataTransaksiToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.dataTransaksiToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.dataTransaksiToolStripMenuItem.Text = "Data Transaksi";
             this.dataTransaksiToolStripMenuItem.Click += new System.EventHandler(this.dataTransaksiToolStripMenuItem_Click);
             // 
             // FormContainer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1196, 590);
+            this.ClientSize = new System.Drawing.Size(897, 479);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormContainer";
             this.Text = "Reservasi Hotel";
             this.Load += new System.EventHandler(this.FormContainer_Load);
