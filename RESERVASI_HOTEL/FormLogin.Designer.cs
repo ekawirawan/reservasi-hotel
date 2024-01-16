@@ -92,6 +92,7 @@ namespace RESERVASI_HOTEL
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Aqua;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(281, 311);
