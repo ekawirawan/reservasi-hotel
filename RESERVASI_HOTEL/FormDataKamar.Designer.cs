@@ -30,10 +30,6 @@ namespace RESERVASI_HOTEL
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCariNoKamar = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnTambahKamar = new System.Windows.Forms.Button();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +39,10 @@ namespace RESERVASI_HOTEL
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCariNoKamar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnTambahKamar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,47 +70,6 @@ namespace RESERVASI_HOTEL
             this.dataGridView1.Size = new System.Drawing.Size(917, 458);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 26);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(89, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Data Kamar";
-            // 
-            // txtCariNoKamar
-            // 
-            this.txtCariNoKamar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtCariNoKamar.Location = new System.Drawing.Point(471, 26);
-            this.txtCariNoKamar.Name = "txtCariNoKamar";
-            this.txtCariNoKamar.Size = new System.Drawing.Size(100, 20);
-            this.txtCariNoKamar.TabIndex = 2;
-            this.txtCariNoKamar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCariNoKamar_KeyDown);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(390, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Cari No.Kamar";
-            // 
-            // btnTambahKamar
-            // 
-            this.btnTambahKamar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTambahKamar.Location = new System.Drawing.Point(837, 19);
-            this.btnTambahKamar.Name = "btnTambahKamar";
-            this.btnTambahKamar.Size = new System.Drawing.Size(93, 30);
-            this.btnTambahKamar.TabIndex = 4;
-            this.btnTambahKamar.Text = "Tambah Kamar";
-            this.btnTambahKamar.UseVisualStyleBackColor = true;
-            this.btnTambahKamar.Click += new System.EventHandler(this.btnTambahKamar_Click);
             // 
             // Column9
             // 
@@ -171,6 +130,47 @@ namespace RESERVASI_HOTEL
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 26);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(89, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Data Kamar";
+            // 
+            // txtCariNoKamar
+            // 
+            this.txtCariNoKamar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCariNoKamar.Location = new System.Drawing.Point(471, 26);
+            this.txtCariNoKamar.Name = "txtCariNoKamar";
+            this.txtCariNoKamar.Size = new System.Drawing.Size(100, 20);
+            this.txtCariNoKamar.TabIndex = 2;
+            this.txtCariNoKamar.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCariNoKamar_KeyDown);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(390, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Cari No.Kamar";
+            // 
+            // btnTambahKamar
+            // 
+            this.btnTambahKamar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTambahKamar.Location = new System.Drawing.Point(837, 19);
+            this.btnTambahKamar.Name = "btnTambahKamar";
+            this.btnTambahKamar.Size = new System.Drawing.Size(93, 30);
+            this.btnTambahKamar.TabIndex = 4;
+            this.btnTambahKamar.Text = "Tambah Kamar";
+            this.btnTambahKamar.UseVisualStyleBackColor = true;
+            this.btnTambahKamar.Click += new System.EventHandler(this.btnTambahKamar_Click);
+            // 
             // FormDataKamar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +181,7 @@ namespace RESERVASI_HOTEL
             this.Controls.Add(this.txtCariNoKamar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDataKamar";
             this.Text = "FormDataKamar";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

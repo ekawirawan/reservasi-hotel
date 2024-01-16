@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnTambahCustomer = new System.Windows.Forms.Button();
-            this.txtCariNamaCustomer = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +36,10 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnTambahCustomer = new System.Windows.Forms.Button();
+            this.txtCariNamaCustomer = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,59 +59,15 @@
             this.Column4,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(27, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 63);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(757, 369);
+            this.dataGridView1.Size = new System.Drawing.Size(568, 300);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnTambahCustomer
-            // 
-            this.btnTambahCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTambahCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahCustomer.Location = new System.Drawing.Point(700, 12);
-            this.btnTambahCustomer.Name = "btnTambahCustomer";
-            this.btnTambahCustomer.Size = new System.Drawing.Size(98, 49);
-            this.btnTambahCustomer.TabIndex = 1;
-            this.btnTambahCustomer.Text = "Tambah";
-            this.btnTambahCustomer.UseVisualStyleBackColor = true;
-            this.btnTambahCustomer.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txtCariNamaCustomer
-            // 
-            this.txtCariNamaCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCariNamaCustomer.Location = new System.Drawing.Point(410, 30);
-            this.txtCariNamaCustomer.Name = "txtCariNamaCustomer";
-            this.txtCariNamaCustomer.Size = new System.Drawing.Size(260, 22);
-            this.txtCariNamaCustomer.TabIndex = 2;
-            this.txtCariNamaCustomer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCariNamaCustomer_KeyDown);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Data Customer";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(255, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 18);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Cari Nama Customer";
             // 
             // Column1
             // 
@@ -170,16 +126,67 @@
             this.Column7.ReadOnly = true;
             this.Column7.Width = 125;
             // 
+            // btnTambahCustomer
+            // 
+            this.btnTambahCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTambahCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambahCustomer.Location = new System.Drawing.Point(525, 10);
+            this.btnTambahCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTambahCustomer.Name = "btnTambahCustomer";
+            this.btnTambahCustomer.Size = new System.Drawing.Size(74, 40);
+            this.btnTambahCustomer.TabIndex = 1;
+            this.btnTambahCustomer.Text = "Tambah";
+            this.btnTambahCustomer.UseVisualStyleBackColor = true;
+            this.btnTambahCustomer.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtCariNamaCustomer
+            // 
+            this.txtCariNamaCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCariNamaCustomer.Location = new System.Drawing.Point(308, 24);
+            this.txtCariNamaCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCariNamaCustomer.Name = "txtCariNamaCustomer";
+            this.txtCariNamaCustomer.Size = new System.Drawing.Size(196, 20);
+            this.txtCariNamaCustomer.TabIndex = 2;
+            this.txtCariNamaCustomer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCariNamaCustomer_KeyDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Data Customer";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(191, 24);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 15);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Cari Nama Customer";
+            // 
             // FormDataCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(810, 481);
+            this.ClientSize = new System.Drawing.Size(608, 391);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCariNamaCustomer);
             this.Controls.Add(this.btnTambahCustomer);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormDataCustomer";
             this.Text = "FormDataCustomer";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
