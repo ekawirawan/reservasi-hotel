@@ -95,10 +95,11 @@ namespace RESERVASI_HOTEL
 
         private void numLamaMenginap_ValueChanged(object sender, EventArgs e)
         {
-            int hargaPerMalam = int.Parse(txtHargaPerMalam.Text);
-            decimal totalBiaya = hargaPerMalam * numLamaMenginap.Value;
-
-            txtHargaTotal.Text = totalBiaya.ToString();
+            if (int.TryParse(txtHargaPerMalam.Text, out int hargaPerMalam))
+            {
+                decimal totalBiaya = hargaPerMalam * numLamaMenginap.Value;
+                txtHargaTotal.Text = totalBiaya.ToString();
+            }
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -112,7 +113,8 @@ namespace RESERVASI_HOTEL
 
                 string[] vSplit = cmbCustomer.Text.Split('-');
                 string id_customer = vSplit[0];
-                string[] vSplitKamar = cmbCustomer.Text.Split('-');
+
+                string[] vSplitKamar = cmbKamar.Text.Split('-');
                 string id_kamar = vSplitKamar[0];
 
                 if (id_transaksi_edit == 0)
@@ -133,14 +135,14 @@ namespace RESERVASI_HOTEL
                      + "id_customer = @pIdCustomer, "
                      + "id_kamar = @pIdKamar, "
                      + "lama_menginap = @pLamaMenginap, "
-                     + "harga_total = @pHargaTotal "
-                     + "harga_per_malam = @pHargaPerMalam, "
-                     + "metode_pembayaran = @pMetodePembayaran "
-                     + "tgl_transaksi = @pTglTransaksi "
-                     + "tgl_check_in = @pTglCheckIn "
-                     + "tgl_check_out = @pTglCheckOut "
+                     + "harga_total = @pHargaTotal, "
+                     + "tgl_transaksi = @pTglTransaksi, "
+                     + "harga_sewa = @pHargaSewa, "
+                     + "metode_pembayaran = @pMetodePembayaran, "
+                     + "tgl_check_in = @pTglCheckIn, "
+                     + "tgl_check_out = @pTglCheckOut, "
                      + "status_pemesanan = @pStatusPemesanan "
-                     + "WHERE id_kamar = @pID";
+                     + "WHERE id_transaksi = @pID";
 
                     cmd.Parameters.AddWithValue("pID", id_transaksi_edit);
                 }

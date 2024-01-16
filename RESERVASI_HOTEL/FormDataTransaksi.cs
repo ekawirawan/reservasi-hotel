@@ -29,9 +29,12 @@ namespace RESERVASI_HOTEL
                 SqlDataReader rd;
 
                 dataGridView1.Rows.Clear();
+
                 //cmd.CommandText = " SELECT Kamar.no_kamar FROM Transaksi JOIN Kamar ON Transaksi.id_kamar = Kamar.id_kamar WHERE Transaksi.id_kamar = @id_kamar ";
                 //cmd.Parameters.AddWithValue("pNoKamar", "%" + txtCariDataTransaksi.Text + "%");
-                cmd.CommandText = " SELECT * FROM Transaksi";
+                cmd.CommandText = "SELECT Transaksi.*, Kamar.nomor_kamar FROM Transaksi JOIN Kamar ON Transaksi.id_kamar = Kamar.id_kamar WHERE Kamar.nomor_kamar LIKE @pNomorKamar";
+                
+                cmd.Parameters.AddWithValue("pNomorKamar", "%" + txtCariDataTransaksi.Text + "%");
                 cmd.Connection = Koneksi.sqlConn;
                 rd = cmd.ExecuteReader();
                 while (rd.Read())
@@ -65,24 +68,28 @@ namespace RESERVASI_HOTEL
             }
         }
 
-        private void dataGridView1_CellContentCli  ck(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 12) //jika klik EDIT
             {
+
                 FormTambahDataTransaksi frm = new FormTambahDataTransaksi();
+
                 frm.StartPosition = FormStartPosition.CenterParent;
                 frm.Text = "Edit Data Transaksi";
                 frm.id_transaksi_edit = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
-                frm.cmbCustomer.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                frm.cmbKamar.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                frm.cmbKamar.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                frm.cmbCustomer.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
                 frm.numLamaMenginap.Value = decimal.Parse(dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
                 frm.cmbMetodePembayaran.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                frm.txtHargaPerMalam.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                frm.txtHargaTotal.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                frm.dtpTanggalTransaksi.Value = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString());
+                frm.dtpTanggalTransaksi.Value = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString());
+                frm.txtHargaPerMalam.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                frm.txtHargaTotal.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
                 frm.dtpTanggalCheckIn.Value = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString());
                 frm.dtpTanggalCheckOut.Value = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString());
                 frm.cmbStatusPesanan.Text = dataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
+
+
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
                     LoadDataTransaksi();
