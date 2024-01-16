@@ -222,5 +222,10 @@ namespace RESERVASI_HOTEL
 
             return stockInt;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -42,8 +42,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,13 +65,13 @@
             this.Column4,
             this.Column6,
             this.Column7});
-            this.dataGridView1.Location = new System.Drawing.Point(25, 146);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 192);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 355);
+            this.dataGridView1.Size = new System.Drawing.Size(736, 413);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -133,16 +135,16 @@
             // btnTambahCustomer
             // 
             this.btnTambahCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTambahCustomer.BackColor = System.Drawing.SystemColors.Control;
+            this.btnTambahCustomer.BackColor = System.Drawing.Color.Transparent;
             this.btnTambahCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTambahCustomer.BackgroundImage")));
             this.btnTambahCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnTambahCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTambahCustomer.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.btnTambahCustomer.FlatAppearance.BorderSize = 0;
-            this.btnTambahCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
+            this.btnTambahCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnTambahCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTambahCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTambahCustomer.Location = new System.Drawing.Point(494, 78);
+            this.btnTambahCustomer.Location = new System.Drawing.Point(675, 48);
             this.btnTambahCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.btnTambahCustomer.Name = "btnTambahCustomer";
             this.btnTambahCustomer.Size = new System.Drawing.Size(86, 40);
@@ -153,7 +155,7 @@
             // txtCariNamaCustomer
             // 
             this.txtCariNamaCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtCariNamaCustomer.Location = new System.Drawing.Point(223, 94);
+            this.txtCariNamaCustomer.Location = new System.Drawing.Point(333, 58);
             this.txtCariNamaCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.txtCariNamaCustomer.Name = "txtCariNamaCustomer";
             this.txtCariNamaCustomer.Size = new System.Drawing.Size(196, 20);
@@ -163,11 +165,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 80);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 55);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 17);
+            this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Data Customer";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -176,36 +179,51 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(260, 76);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(360, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 15);
+            this.label2.Size = new System.Drawing.Size(140, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Cari Nama Customer";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(198, 94);
+            this.pictureBox1.Location = new System.Drawing.Point(308, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtCariNamaCustomer);
+            this.panel1.Controls.Add(this.btnTambahCustomer);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(790, 134);
+            this.panel1.TabIndex = 7;
+            // 
             // FormDataCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 525);
+            this.ClientSize = new System.Drawing.Size(789, 632);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtCariNamaCustomer);
-            this.Controls.Add(this.btnTambahCustomer);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -214,8 +232,9 @@
             this.Text = "FormDataCustomer";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -234,5 +253,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
         private System.Windows.Forms.DataGridViewButtonColumn Column7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
