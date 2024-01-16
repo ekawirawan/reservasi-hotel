@@ -22,40 +22,91 @@ namespace RESERVASI_HOTEL
         {
             try
             {
-                Koneksi.buka();
-                SqlCommand sqlCommand = new SqlCommand();
-                SqlCommand cmd = sqlCommand;
-                cmd.Connection = Koneksi.sqlConn;
+                string username = txtUsername.Text;
+                string password = txtPassword.Text;
 
-                SqlDataReader rd;
-
-
-                cmd.CommandText = " SELECT * FROM Resepsionis WHERE username=@pUsername ";
-                cmd.Parameters.AddWithValue("pUsername", txtUsername.Text);
-                rd = cmd.ExecuteReader();
-
-                if (rd.Read())
+                Boolean isRegistered, isValidPassword;
+                isRegistered = checkUsername(username);
+                if (isRegistered)
                 {
-                    MessageBox.Show("Login Berhasil", "Success",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    isValidPassword = checkPassword(password);
 
-                    FormHome fh = new FormHome();
-                    fh.WindowState = FormWindowState.Maximized;
-                    fh.Show();
+                    if (isValidPassword)
+                    {
+                        FormContainer fc = new FormContainer();
+                        fc.Show();
+                        this.Hide();
 
-                    this.Close();
+                        MessageBox.Show("Login Berhasil", "Success",
+                          MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    } else
+                    {
+                        MessageBox.Show("Username atau Password Salah", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Username atau Password Salah", "Error",
-                   MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+
+                
             }
             catch (Exception err)
             {
-                MessageBox.Show("Terjadi kesalahan", "Error",
+                MessageBox.Show("Terjadi kesalahan" + err, "Error",
                   MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public Boolean checkUsername(string username)
+        {
+            Koneksi.buka();
+            SqlCommand sqlCommand = new SqlCommand();
+            SqlCommand cmd = sqlCommand;
+            cmd.Connection = Koneksi.sqlConn;
+
+            SqlDataReader rd;
+
+            cmd.CommandText = " SELECT * FROM Resepsionis WHERE username=@pUsername ";
+            cmd.Parameters.AddWithValue("pUsername", username);
+            rd = cmd.ExecuteReader();
+
+            if (rd.Read())
+            {
+                Koneksi.tutup();
+                cmd.Dispose();
+                return true;
+            } else
+            {
+                Koneksi.tutup();
+                cmd.Dispose();
+                return false;
+            }
+        }
+
+        public Boolean checkPassword(string password)
+        {
+            Koneksi.buka();
+            SqlCommand sqlCommand = new SqlCommand();
+            SqlCommand cmd = sqlCommand;
+            cmd.Connection = Koneksi.sqlConn;
+
+            SqlDataReader rd;
+
+            cmd.CommandText = " SELECT * FROM Resepsionis WHERE password=@pPassword ";
+            cmd.Parameters.AddWithValue("pPassword", password);
+            rd = cmd.ExecuteReader();
+
+            if (rd.Read())
+            {
+                Koneksi.tutup();
+                cmd.Dispose();
+                return true;
+            }
+            else
+            {
+                Koneksi.tutup();
+                cmd.Dispose();
+                return false;
+            }
+
         }
     }
 }

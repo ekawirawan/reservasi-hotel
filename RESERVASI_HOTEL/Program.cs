@@ -16,7 +16,7 @@ namespace RESERVASI_HOTEL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormContainer());
+            Application.Run(new FormLogin());
         }
     }
 }

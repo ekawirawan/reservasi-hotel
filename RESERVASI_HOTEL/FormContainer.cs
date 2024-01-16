@@ -15,6 +15,15 @@ namespace RESERVASI_HOTEL
         public FormContainer()
         {
             InitializeComponent();
+            defaultChildForm();
+        }
+
+        public void defaultChildForm()
+        {
+            FormHome form = new FormHome();
+            form.MdiParent = this;
+            form.WindowState = FormWindowState.Maximized;
+            form.Show();
         }
 
         public void setMenuStrip(ToolStripItemClickedEventArgs e, Form form, string nameItemToolStrip)
