@@ -42,6 +42,7 @@ namespace RESERVASI_HOTEL
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.laporanTahunanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +61,8 @@ namespace RESERVASI_HOTEL
             this.dataKamarToolStripMenuItem,
             this.dataCustomerToolStripMenuItem,
             this.dataResepsionisToolStripMenuItem,
-            this.dataTransaksiToolStripMenuItem});
+            this.dataTransaksiToolStripMenuItem,
+            this.laporanTahunanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 35);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -179,6 +181,12 @@ namespace RESERVASI_HOTEL
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // laporanTahunanToolStripMenuItem
+            // 
+            this.laporanTahunanToolStripMenuItem.Name = "laporanTahunanToolStripMenuItem";
+            this.laporanTahunanToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.laporanTahunanToolStripMenuItem.Text = "Laporan Tahunan";
+            // 
             // FormContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -217,5 +225,6 @@ namespace RESERVASI_HOTEL
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem laporanTahunanToolStripMenuItem;
     }
 }

@@ -46,6 +46,7 @@ namespace RESERVASI_HOTEL
             setMenuStrip(e, new FormDataCustomer(), "Data Customer");
             setMenuStrip(e, new FormDataResepsionis(), "Data Resepsionis");
             setMenuStrip(e, new FormDataTransaksi(), "Data Transaksi");
+            setMenuStrip(e, new FormReportTransaksi(), "Laporan Tahunan");
         }
 
        
