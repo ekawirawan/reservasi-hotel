@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="HOTELConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="HOTELConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.RESERVASI_HOTEL.Properties.Settings.GlobalReference.Default.HOTELConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableTransaksiTableAdapter" GeneratorDataComponentClassName="DataTableTransaksiTableAdapter" Name="DataTableTransaksi" UserDataComponentName="DataTableTransaksiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="HOTELConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Transaksi.tgl_transaksi, YEAR(Transaksi.tgl_transaksi) AS tahun, Kamar.nomor_kamar, Customer.nama, Transaksi.lama_menginap, Transaksi.harga_total
+FROM Transaksi 
+INNER JOIN Kamar ON Transaksi.id_kamar = Kamar.id_kamar
+INNER JOIN Customer ON Transaksi.id_customer = Customer.id_customer
+ORDER BY tgl_transaksi DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="tgl_transaksi" DataSetColumn="tgl_transaksi" />
+              <Mapping SourceColumn="tahun" DataSetColumn="tahun" />
+              <Mapping SourceColumn="nomor_kamar" DataSetColumn="nomor_kamar" />
+              <Mapping SourceColumn="nama" DataSetColumn="nama" />
+              <Mapping SourceColumn="lama_menginap" DataSetColumn="lama_menginap" />
+              <Mapping SourceColumn="harga_total" DataSetColumn="harga_total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableTransaksi" msprop:Generator_TableClassName="DataTableTransaksiDataTable" msprop:Generator_TableVarName="tableDataTableTransaksi" msprop:Generator_TablePropName="DataTableTransaksi" msprop:Generator_RowDeletingName="DataTableTransaksiRowDeleting" msprop:Generator_RowChangingName="DataTableTransaksiRowChanging" msprop:Generator_RowEvHandlerName="DataTableTransaksiRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableTransaksiRowDeleted" msprop:Generator_UserTableName="DataTableTransaksi" msprop:Generator_RowChangedName="DataTableTransaksiRowChanged" msprop:Generator_RowEvArgName="DataTableTransaksiRowChangeEvent" msprop:Generator_RowClassName="DataTableTransaksiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tgl_transaksi" msprop:Generator_ColumnVarNameInTable="columntgl_transaksi" msprop:Generator_ColumnPropNameInRow="tgl_transaksi" msprop:Generator_ColumnPropNameInTable="tgl_transaksiColumn" msprop:Generator_UserColumnName="tgl_transaksi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="tahun" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntahun" msprop:Generator_ColumnPropNameInRow="tahun" msprop:Generator_ColumnPropNameInTable="tahunColumn" msprop:Generator_UserColumnName="tahun" type="xs:int" minOccurs="0" />
+              <xs:element name="nomor_kamar" msprop:Generator_ColumnVarNameInTable="columnnomor_kamar" msprop:Generator_ColumnPropNameInRow="nomor_kamar" msprop:Generator_ColumnPropNameInTable="nomor_kamarColumn" msprop:Generator_UserColumnName="nomor_kamar" type="xs:int" minOccurs="0" />
+              <xs:element name="nama" msprop:Generator_ColumnVarNameInTable="columnnama" msprop:Generator_ColumnPropNameInRow="nama" msprop:Generator_ColumnPropNameInTable="namaColumn" msprop:Generator_UserColumnName="nama" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lama_menginap" msprop:Generator_ColumnVarNameInTable="columnlama_menginap" msprop:Generator_ColumnPropNameInRow="lama_menginap" msprop:Generator_ColumnPropNameInTable="lama_menginapColumn" msprop:Generator_UserColumnName="lama_menginap" type="xs:int" minOccurs="0" />
+              <xs:element name="harga_total" msprop:Generator_ColumnVarNameInTable="columnharga_total" msprop:Generator_ColumnPropNameInRow="harga_total" msprop:Generator_ColumnPropNameInTable="harga_totalColumn" msprop:Generator_UserColumnName="harga_total" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
